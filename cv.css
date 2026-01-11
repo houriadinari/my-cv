@@ -1,0 +1,167 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #f4f4f4;
+ 
+}
+aside {
+  width: 30%;
+  background: #e8e2dc;
+  margin-top: -196px;
+  position: relative;
+  z-index: 1; 
+   /* نفس علو الهيدر */
+}
+
+.container{
+  display: flex;
+}
+.aside-content {
+  padding: 25px;
+  margin-top: 196px; /* نفس القيمة لكن موجبة */
+ 
+
+}
+
+/* HEADER */
+
+header {
+  height: 167px;
+  display: flex;
+  position: relative;
+  z-index: 10;  
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+  background-color: black;
+  margin-left: 151px;
+}
+.header-text {
+  color: white;
+  display: flex;
+  flex-direction: column;   /* هذا هو المفتاح */
+  justify-content: center;  /* وسط عمودي */
+  align-items: center;      /* وسط أفقي */
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  letter-spacing: 4px;
+  padding-top: 5%;
+}
+header h3 {
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  max-width: 60%;
+  
+}
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: black 2px solid;
+  position: absolute;
+  left: -125px;
+  width: 182px;
+  height: 182px;
+  background-color: white;
+}
+
+
+
+/* LAYOUT */
+aside {
+  width: 30%;
+  background: #e8e2dc;
+
+}
+
+main {
+  width: 70%;
+  background: #ffffff;
+  padding: 25px; 
+}
+
+
+
+/* TITLES */
+h2 {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #222;
+}
+
+h3 {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* TEXT */
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #0b0b0b;
+} 
+
+/* LISTS */
+ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* HR */
+hr {
+  border: none;
+  border-top: 2px solid #222;
+  margin: 8px 0 12px;
+}
+
+/* CONTACT LIST */
+aside ul:first-child {
+  list-style: none;
+  padding-left: 0;
+}
+
+aside ul:first-child li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+ 
+}
+
+/* Email */
+aside ul:first-child li:nth-child(1)::before {
+  content: "✉";
+  position: absolute;
+  left: 0;
+}
+
+/* Phone */
+aside ul:first-child li:nth-child(2)::before {
+  content: "📞";
+  position: absolute;
+  left: 0;
+}
+
+/* Country */
+aside ul:first-child li:nth-child(3)::before {
+  content: "📍";
+  position: absolute;
+  left: 0;
+}
